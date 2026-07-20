@@ -1,0 +1,37 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 1080
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "vless-out",
+      "server": "js.shapina-demo.ir",
+      "server_port": 1112,
+      "uuid": "620f524c-b9d3-442d-b947-fe735fb18e8d",
+      "network": "tcp",
+      "transport": {
+        "type": "http",
+        "host": [
+          "play.google.com"
+        ],
+        "path": "/"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    }
+  ],
+  "route": {
+    "final": "vless-out"
+  }
+}
