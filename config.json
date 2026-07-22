@@ -1,0 +1,298 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      },
+      "tag": "socks-in"
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 10809,
+      "protocol": "http",
+      "settings": {},
+      "tag": "http-in"
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "turkey-reality",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "js.3030gallery.ir",
+            "port": 8443,
+            "users": [
+              {
+                "id": "b3c8c160-d793-48d0-a072-a2e984d50df6",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.sony.com",
+          "fingerprint": "qq",
+          "publicKey": "9JlqfIsxCgGA1keNoE-HmYowjJ-bY3mjFCvCyU9nTT8",
+          "shortId": "abac515e4c72542d"
+        }
+      }
+    },
+    {
+      "tag": "iran-netmeli-1",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "178.239.148.217",
+            "port": 1198,
+            "users": [
+              {
+                "id": "b3c8c160-d793-48d0-a072-a2e984d50df6",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "play.google.com",
+          "fingerprint": "chrome",
+          "publicKey": "9JlqfIsxCgGA1keNoE-HmYowjJ-bY3mjFCvCyU9nTT8",
+          "shortId": "abac515e4c72542d"
+        }
+      }
+    },
+    {
+      "tag": "iran-netmeli-2",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.108.152.168",
+            "port": 1198,
+            "users": [
+              {
+                "id": "b3c8c160-d793-48d0-a072-a2e984d50df6",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "play.google.com",
+          "fingerprint": "chrome",
+          "publicKey": "9JlqfIsxCgGA1keNoE-HmYowjJ-bY3mjFCvCyU9nTT8",
+          "shortId": "abac515e4c72542d"
+        }
+      }
+    },
+    {
+      "tag": "germany-1",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "js.shapina-demo.ir",
+            "port": 1112,
+            "users": [
+              {
+                "id": "b3c8c160-d793-48d0-a072-a2e984d50df6",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "path": [
+                "/"
+              ],
+              "headers": {
+                "Host": [
+                  "play.google.com"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "germany-2",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "s1.eldoradu.ir",
+            "port": 8080,
+            "users": [
+              {
+                "id": "b3c8c160-d793-48d0-a072-a2e984d50df6",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "httpupgrade",
+        "security": "none",
+        "httpupgradeSettings": {
+          "host": "trx.sellink.ir",
+          "path": "/?ed=2080"
+        }
+      }
+    },
+    {
+      "tag": "germany-3",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "s2.eldoradu.ir",
+            "port": 8080,
+            "users": [
+              {
+                "id": "b3c8c160-d793-48d0-a072-a2e984d50df6",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "httpupgrade",
+        "security": "none",
+        "httpupgradeSettings": {
+          "host": "xlsf.sellink.ir",
+          "path": "/?ed=2080"
+        }
+      }
+    },
+    {
+      "tag": "usa",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "css.shapina-demo.ir",
+            "port": 1112,
+            "users": [
+              {
+                "id": "b3c8c160-d793-48d0-a072-a2e984d50df6",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {
+          "header": {
+            "type": "http",
+            "request": {
+              "path": [
+                "/"
+              ],
+              "headers": {
+                "Host": [
+                  "play.google.com"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "tag": "england",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "s3.eldoradu.ir",
+            "port": 8080,
+            "users": [
+              {
+                "id": "b3c8c160-d793-48d0-a072-a2e984d50df6",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "httpupgrade",
+        "security": "none",
+        "httpupgradeSettings": {
+          "host": "trx.sellink.ir",
+          "path": "/?ed=2080"
+        }
+      }
+    },
+    {
+      "tag": "france",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "s4.eldoradu.ir",
+            "port": 8080,
+            "users": [
+              {
+                "id": "b3c8c160-d793-48d0-a072-a2e984d50df6",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "httpupgrade",
+        "security": "none",
+        "httpupgradeSettings": {
+          "host": "xlsf.sellink.ir",
+          "path": "/?ed=2080"
+        }
+      }
+    },
+    {
+      "protocol": "freedom",
+      "tag": "direct",
+      "settings": {}
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "block",
+      "settings": {}
+    }
+  ]
+}
